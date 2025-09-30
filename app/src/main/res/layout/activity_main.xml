@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:text="WebURL"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="https:://www.google.com"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonBrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Browse"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextUrl"
+        app:layout_constraintStart_toEndOf="@+id/editTextUrl" />
+
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Phone No.:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="               9142654245         "
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewPhone"
+        app:layout_constraintStart_toEndOf="@+id/textViewPhone" />
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Call"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextPhone"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone" />
+
+    <TextView
+        android:id="@+id/textViewLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Call Log:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhone" />
+
+    <Button
+        android:id="@+id/buttonLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Call Log"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewLog"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCall"
+         />
+
+
+    <TextView
+        android:id="@+id/textViewGal"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Gallery:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLog" />
+
+    <Button
+        android:id="@+id/buttonGal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="194dp"
+        android:text="Gallery"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewGal"
+        app:layout_constraintStart_toEndOf="@+id/textViewGal" />
+
+    <TextView
+        android:id="@+id/textViewCamera"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Camera:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGal" />
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="194dp"
+        android:text="Camera"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCamera"
+        app:layout_constraintStart_toEndOf="@+id/textViewCamera" />
+
+    <TextView
+        android:id="@+id/textViewAlarm"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Alarm:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCamera" />
+
+    <Button
+        android:id="@+id/buttonAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="194dp"
+        android:text="Alarm"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAlarm"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlarm" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Login:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlarm" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="194dp"
+        android:text="Login"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewLogin"
+        app:layout_constraintStart_toEndOf="@+id/textViewLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
